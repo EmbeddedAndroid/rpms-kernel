@@ -325,6 +325,7 @@ Source56: config-debug
 Patch1001: 0001-arm64-mm-Fix-memmap-to-be-initialized-for-the-entire.patch
 Patch1002: 0001-arm64-Workaround-for-QDF2432-ID_AA64-SR-accesses.patch
 Patch1003: 0001-arm64-prefer-ACPI-by-default.patch
+Patch1004: 0001-arm-arm64-vgic-dont-flush-sync.patch
 
 # empty final patch to facilitate testing of kernel patches
 Patch999999: linux-kernel-test.patch
@@ -658,6 +659,7 @@ fi
 git am %{PATCH1001}
 git am %{PATCH1002}
 git am %{PATCH1003}
+git am %{PATCH1004}
 
 # Any further pre-build tree manipulations happen here.
 
